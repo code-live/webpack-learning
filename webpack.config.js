@@ -1,6 +1,17 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
 	entry: './src/app.js',
 	output: {
-		filename: './dist/app.bundle.js'
-	}
+		path: 'dist',
+		filename: 'app.bundle.js'
+	},
+	plugins: [new HtmlWebpackPlugin({
+		title: 'My project',
+		minify: {
+			collapseWhitespace: true
+		},
+		hash: true,
+		template: './src/index.ejs',
+	})]
 }
