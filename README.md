@@ -1,8 +1,10 @@
 # webpack-learning
-webpack-learning
+webpack-learning : Steps to include different modules in webbpack and use them in project. Like css, sass, modules.
 
 npm i -D webpack
 
 webpack ./src/app.js  ./dist/app.bundle.js -p --watch
 
 npm i html-webpack-plugin --save-dev
+
+npm install css-loader --save-dev
